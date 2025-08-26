@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(83, 83, 255, 0.768);
+      margin: 0;
+      padding: 35px;
+    }
+
+    .mondrian-container{ /* The container in which the Mondrian Painting is placed in */
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+    }
+
+    .box{
+      background-color: #F0F1EC;
+    }
+
+    .red{ /* Red Section for the Mondrian Painting */
+      background-color: #E72F24;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .white-box-1{ /* White Top Area Section for the Mondrian Painting */
+      background-color: #F0F1EC;
+      grid-column: span 3
+    }
+
+    .white-box-2{
+      background-color: #F0F1EC;
+      grid-row: span 2
+    }
+
+    .white-box-3{ /* White Bottom Area Section for the Mondrian Painting */
+      background-color: #F0F1EC;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+    }
+
+    .white-box-4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .blue{ /* Blue Section for the Mondrian Painting */
+      background-color: #004592;
+      grid-column: 4 / 4;
+      grid-row: 2 / 3;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow{ /* Yellow Section for the Mondrian Painting */
+      background-color: #F9D01E;
+      grid-column: 2 / 3;
+      grid-row: 4 / 4;
+      width: 198px;
+      height: 22px;
+    }
+
+    .black{ /* Black Section for the Mondrian Painting */
+      background-color: #232629;
+      grid-column: 3 / 3;
+      grid-row: 4 / 4;
+      width: 153px;
+      height: 22px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="mondrian-container">
+      <div class="red"></div>
+      <div class="white-box-1"></div>
+      <div class="white-box-2"></div>
+      <div class="white-box-3"></div>
+
+      <div class="blue"></div>
+      <div class="white-box-4"></div>
+
+      <div class="box"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+   </div>
+
+</body>
+</html>
+
+<!--     
+    .gap1{
+      background-color: #000;
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+      height: 330px;
+      width: 9px;
+    }
+
+    .gap2{
+      background-color: #000;
+      grid-column: 1 / 3;
+      grid-row: 4 / 4;
+      width: 739px;
+      height: 9px;
+      margin-bottom: 10px;
+    }
+
+    .gap3{
+      background-color: #000;
+      grid-column: 3 / 3;
+      grid-row: 4 / 4;
+      width: 9px;
+      height: 18px;
+      margin-left: 6px;
+      margin-top: 9px;
+    }
+
+    .gap4{
+      background-color: #000;
+      grid-column: 4 / 4;
+      grid-row: 2 / 4;
+      height: 330px;
+      width: 9px;
+      margin-left: 32px;
+    }
+-->
